@@ -2,12 +2,12 @@
 
 We use a lightweight MCDA-informed scoring model to compare GenAI security tools. We also explain why each "dimension" has been assigned its respective weight. Below is an explanation to the MCDA model we use, with context.
 
-Organizations often have diverse priorities and conflicting interests. Organizations often evalaute tools across multiple competing criteria. This is known as the “n > 2 criteria” problem when more than two criteria are important and there may be no single option that is objectively best across all dimensions. MCDA-style methods can help make these trade-offs explicit by (1) defining criteria, (2) assigning weights, (3) scoring alternatives, and (4) applying a transparent decision rule.
+Organizations often have diverse priorities and conflicting interests. Organizations also often evalaute tools across multiple competing criteria. This is known as the “n > 2 criteria” problem when more than two criteria are important and there may be no single option that is objectively best across all dimensions. MCDA-style methods can help make these trade-offs explicit by (1) defining criteria, (2) assigning weights, (3) scoring alternatives, and (4) applying a transparent decision rule.
 
-We apply swing weighting as a lightweight way to assign relative importance to each criterion. We apply this with a specific thought experiment in mind: **Imagine a baseline scenario where all criteria are at their worst possible state (a score of zero). If you could upgrade only a limited number of these criteria to their best possible performance, which ones would deliver the highest strategic value? Your choices inform  how the model's weights are assigned. These choices are often defined by organizations in accordance with their adherence to relevant frameworks (i.e. industry frameworks), stakeholder priorities, security functions, etc.**
+We use swing weighting as a lightweight way to assign relative importance to each criterion. The method is based on the following thought experiment: **Imagine a baseline scenario where all criteria are at their worst possible state (a score of zero). If you could upgrade only a limited number of these criteria to their best possible performance, which ones would deliver the highest strategic value? Your choices inform  how the model's weights are assigned. These choices are often defined by organizations in accordance with their adherence to relevant frameworks (i.e. industry frameworks), stakeholder priorities, security functions, etc.**
 
 ## Compensatory and Non-Compensatory Logic
-We use a hybrid MCDA approach, employing both non-compensatory and compensatory features described below.
+We use a hybrid MCDA-informed, employing both non-compensatory and compensatory features described below.
 
 “Gate criteria” are non-compensatory. For example, a tool cannot compensate for failing ethical testability or having no relevance to the selected OWASP GenAI categories. Even if the tool scores highly in one area, it should not be recommended for AI adoption under this project scope if it fails a required gate.
 
