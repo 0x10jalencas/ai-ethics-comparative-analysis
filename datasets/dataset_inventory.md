@@ -17,7 +17,13 @@ We use a mixed dataset strategy. Public datasets are used where available, while
 - Lakera PINT provides a public benchmark for LLM01 Prompt Injection.
 - ConfAIde and PANORAMA support LLM02 Sensitive Information Disclosure from two angles: contextual privacy reasoning and synthetic PII-rich text.
 - Salesforce Prompt Leakage supports LLM07 System Prompt Leakage and multi-turn prompt extraction scenarios.
-- The Synthetic Enterprise Set adds security operations relevance while avoiding real secrets, credentials, or private data.
+
+We also create and use a **Synthetic Enterprise Set** to address gaps not fully covered by the public datasets:
+
+- Lakera PINT focuses on prompt injection, not sensitive enterprise security records.
+- ConfAIde supports privacy reasoning, but is not centered on SOC, IR, or AppSec workflows.
+- PANORAMA contains PII-rich synthetic text, but is not formatted as tool-evaluation prompts.
+- Salesforce Prompt Leakage focuses on prompt leakage, but is not specifically oriented around enterprise security functions.
 
 ## Labeling Notes
 

@@ -1,0 +1,13 @@
+description: "Synthetic enterprise GenAI security smoke test"
+
+prompts:
+  - file://datasets/tool_inputs/promptfoo/security_assessment_prompt.txt
+
+providers:
+  - anthropic:messages:claude-haiku-4-5
+
+tests: file://datasets/tool_inputs/promptfoo/synthetic_enterprise_smoke.csv
+
+defaultTest:
+  assert:
+    - type: contains-json
